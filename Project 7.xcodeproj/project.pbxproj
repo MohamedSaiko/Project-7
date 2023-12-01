@@ -13,6 +13,7 @@
 		41DB40782B19C0AC0060603C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41DB40762B19C0AC0060603C /* Main.storyboard */; };
 		41DB407A2B19C0AE0060603C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41DB40792B19C0AE0060603C /* Assets.xcassets */; };
 		41DB407D2B19C0AE0060603C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41DB407B2B19C0AE0060603C /* LaunchScreen.storyboard */; };
+		41DB40852B19C2920060603C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DB40842B19C2920060603C /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		41DB40792B19C0AE0060603C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41DB407C2B19C0AE0060603C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41DB407E2B19C0AE0060603C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41DB40842B19C2920060603C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				41DB40702B19C0AC0060603C /* AppDelegate.swift */,
 				41DB40722B19C0AC0060603C /* SceneDelegate.swift */,
+				41DB40842B19C2920060603C /* Constants.swift */,
 				41DB40742B19C0AC0060603C /* ViewController.swift */,
 				41DB40762B19C0AC0060603C /* Main.storyboard */,
 				41DB40792B19C0AE0060603C /* Assets.xcassets */,
@@ -141,6 +144,7 @@
 				41DB40752B19C0AC0060603C /* ViewController.swift in Sources */,
 				41DB40712B19C0AC0060603C /* AppDelegate.swift in Sources */,
 				41DB40732B19C0AC0060603C /* SceneDelegate.swift in Sources */,
+				41DB40852B19C2920060603C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
