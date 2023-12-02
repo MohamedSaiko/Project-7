@@ -9,3 +9,4 @@ import Foundation
 
 let cellIdentifier = "Cell"
 let navigationControllerID = "NavController"
+let urlString = "https://www.hackingwithswift.com/samples/petitions-1.json"

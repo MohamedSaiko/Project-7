@@ -8,20 +8,26 @@
 import UIKit
 
 class ViewController: UITableViewController {
-    var petetions = [String]()
+    var manager = Manager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        manager.getData { [weak self] petetions in
+            self?.manager.petetions = petetions.results
+            DispatchQueue.main.async {
+                self?.tableView.reloadData()
+            }
+        }
     }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return petetions.count
+        return manager.petetions.count
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let petetion = manager.petetions[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
         var content = cell.defaultContentConfiguration()
-        content.text = "Title goes here"
-        content.secondaryText = "Subtitle goes here"
+        content.text = petetion.title
+        content.secondaryText = petetion.body
         cell.contentConfiguration = content
         return cell
     }
